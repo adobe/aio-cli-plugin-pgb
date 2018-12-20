@@ -7,7 +7,7 @@ oclif plugin for pgb-cli
 [![Version](https://img.shields.io/npm/v/aio-cli-plugin-pgb.svg)](https://npmjs.org/package/aio-cli-plugin-pgb)
 [![Downloads/week](https://img.shields.io/npm/dw/aio-cli-plugin-pgb.svg)](https://npmjs.org/package/aio-cli-plugin-pgbb)
 [![Build status](https://ci.appveyor.com/api/projects/status/64arn2jha5xrp3i3/branch/master?svg=true)](https://ci.appveyor.com/project/adobe/aio-cli-plugin-pgb/branch/master)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Greenkeeper badge](https://badges.greenkeeper.io/adobe/aio-cli-plugin-pgb.svg)](https://greenkeeper.io/)
 
 <!-- toc -->
 * [Usage](#usage)
