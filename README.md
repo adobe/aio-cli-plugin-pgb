@@ -16,11 +16,11 @@ Adobe I/O oclif plugin for pgb-cli
 # Usage
 ```sh-session
 $ npm install -g @adobe/aio-cli-plugin-pgb
-$ aio-cli-plugin-pgb COMMAND
+$ aio-pgb COMMAND
 running command...
-$ aio-cli-plugin-pgb --help [COMMAND]
+$ aio-pgb --help [COMMAND]
 USAGE
-  $ aio-cli-plugin-pgb COMMAND
+  $ aio-pgb COMMAND
 ...
 ```
 # Commands
