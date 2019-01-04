@@ -1,0 +1,24 @@
+{
+    "env": {
+        "node": true,
+        "es6": true,
+        "jest": true,
+        "jest/globals": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2017
+    },
+    "plugins": [
+        "jest"
+    ],
+    "extends": [
+        "plugin:jest/recommended",
+        "oclif"
+    ],
+    "rules": {
+        "quotes": 2
+    },
+    "globals": {
+      "pgb": true
+    },
+}
