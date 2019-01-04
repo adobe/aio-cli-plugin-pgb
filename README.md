@@ -61,7 +61,7 @@ OPTIONS
   --help         Show help
 ```
 
-_See code: [src/commands/pgb/index.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/index.js)_
+_See code: [src/commands/pgb/index.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/index.js)_
 
 ## `aio-pgb pgb:app ID`
 
@@ -79,7 +79,7 @@ OPTIONS
   --no-colours   Do not use ansi colours
 ```
 
-_See code: [src/commands/pgb/app.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/app.js)_
+_See code: [src/commands/pgb/app.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/app.js)_
 
 ## `aio-pgb pgb:build ID [PLATFORMS...]`
 
@@ -103,7 +103,7 @@ EXAMPLES
   $ aio pgb:build 12 ios android
 ```
 
-_See code: [src/commands/pgb/build.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/build.js)_
+_See code: [src/commands/pgb/build.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/build.js)_
 
 ## `aio-pgb pgb:download ID PLATFORM [PATH]`
 
@@ -127,7 +127,7 @@ EXAMPLES
   $ aio pgb download 12 ios /tmp/download/
 ```
 
-_See code: [src/commands/pgb/download.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/download.js)_
+_See code: [src/commands/pgb/download.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/download.js)_
 
 ## `aio-pgb pgb:key PLATFORM ID`
 
@@ -148,7 +148,7 @@ EXAMPLE
   $ aio pgb:key ios 12
 ```
 
-_See code: [src/commands/pgb/key.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/key.js)_
+_See code: [src/commands/pgb/key.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/key.js)_
 
 ## `aio-pgb pgb:keys [PLATFORM]`
 
@@ -174,7 +174,7 @@ EXAMPLES
   $ aio pgb:keys ios
 ```
 
-_See code: [src/commands/pgb/keys.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/keys.js)_
+_See code: [src/commands/pgb/keys.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/keys.js)_
 
 ## `aio-pgb pgb:lock PLATFORM ID`
 
@@ -191,7 +191,7 @@ OPTIONS
   --no-colours   Do not use ansi colours
 ```
 
-_See code: [src/commands/pgb/lock.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/lock.js)_
+_See code: [src/commands/pgb/lock.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/lock.js)_
 
 ## `aio-pgb pgb:log ID PLATFORM`
 
@@ -208,7 +208,7 @@ OPTIONS
   --no-colours   Do not use ansi colours
 ```
 
-_See code: [src/commands/pgb/log.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/log.js)_
+_See code: [src/commands/pgb/log.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/log.js)_
 
 ## `aio-pgb pgb:login`
 
@@ -228,7 +228,7 @@ ALIASES
   $ aio-pgb pgb:sign-in
 ```
 
-_See code: [src/commands/pgb/login.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/login.js)_
+_See code: [src/commands/pgb/login.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/login.js)_
 
 ## `aio-pgb pgb:logout`
 
@@ -248,7 +248,7 @@ ALIASES
   $ aio-pgb pgb:sign-out
 ```
 
-_See code: [src/commands/pgb/logout.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/logout.js)_
+_See code: [src/commands/pgb/logout.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/logout.js)_
 
 ## `aio-pgb pgb:ls [COLUMNS...]`
 
@@ -270,7 +270,7 @@ ALIASES
   $ aio-pgb pgb:list
 ```
 
-_See code: [src/commands/pgb/ls.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/ls.js)_
+_See code: [src/commands/pgb/ls.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/ls.js)_
 
 ## `aio-pgb pgb:new REPOSITORY|DIRECTORY|FILE`
 
@@ -310,7 +310,7 @@ EXAMPLES
   $ aio pgb:new http://github.com/org/repo --tag=staging --hydrates=true
 ```
 
-_See code: [src/commands/pgb/new.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/new.js)_
+_See code: [src/commands/pgb/new.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/new.js)_
 
 ## `aio-pgb pgb:new-key PLATFORM`
 
@@ -345,7 +345,7 @@ EXAMPLES
   $ aio pgb:new-key winphone --title='winphone publisher id' --publisher_id='XXXXXXXXX-XXXXXX'
 ```
 
-_See code: [src/commands/pgb/new-key.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/new-key.js)_
+_See code: [src/commands/pgb/new-key.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/new-key.js)_
 
 ## `aio-pgb pgb:phonegaps`
 
@@ -365,7 +365,7 @@ ALIASES
   $ aio-pgb pgb:cordovas
 ```
 
-_See code: [src/commands/pgb/phonegaps.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/phonegaps.js)_
+_See code: [src/commands/pgb/phonegaps.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/phonegaps.js)_
 
 ## `aio-pgb pgb:pull ID`
 
@@ -404,7 +404,7 @@ EXAMPLES
   $ aio pgb:pull 12 --hydrates=true
 ```
 
-_See code: [src/commands/pgb/pull.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/pull.js)_
+_See code: [src/commands/pgb/pull.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/pull.js)_
 
 ## `aio-pgb pgb:rm ID`
 
@@ -426,7 +426,7 @@ ALIASES
   $ aio-pgb pgb:delete
 ```
 
-_See code: [src/commands/pgb/rm.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/rm.js)_
+_See code: [src/commands/pgb/rm.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/rm.js)_
 
 ## `aio-pgb pgb:rm-key PLATFORM ID`
 
@@ -448,7 +448,7 @@ ALIASES
   $ aio-pgb pgb:delete-key
 ```
 
-_See code: [src/commands/pgb/rm-key.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/rm-key.js)_
+_See code: [src/commands/pgb/rm-key.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/rm-key.js)_
 
 ## `aio-pgb pgb:unlock PLATFORM ID`
 
@@ -469,7 +469,7 @@ ALIASES
   $ aio-pgb pgb:unlock-key
 ```
 
-_See code: [src/commands/pgb/unlock.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/unlock.js)_
+_See code: [src/commands/pgb/unlock.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/unlock.js)_
 
 ## `aio-pgb pgb:update ID [REPOSITORY|DIRECTORY|FILE]`
 
@@ -504,7 +504,7 @@ EXAMPLE
   $ aio pgb:update 12 /path/to/app --hydrates=true --ios_key=24
 ```
 
-_See code: [src/commands/pgb/update.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/update.js)_
+_See code: [src/commands/pgb/update.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/update.js)_
 
 ## `aio-pgb pgb:update-key PLATFORM ID`
 
@@ -527,7 +527,7 @@ EXAMPLE
   $ aio pgb:update-key ios 12 --title='new title' --default=true
 ```
 
-_See code: [src/commands/pgb/update-key.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/update-key.js)_
+_See code: [src/commands/pgb/update-key.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/update-key.js)_
 
 ## `aio-pgb pgb:wait ID`
 
@@ -545,7 +545,7 @@ OPTIONS
   --no-progress  Do not show progress
 ```
 
-_See code: [src/commands/pgb/wait.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/wait.js)_
+_See code: [src/commands/pgb/wait.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/wait.js)_
 
 ## `aio-pgb pgb:whoami`
 
@@ -565,5 +565,5 @@ ALIASES
   $ aio-pgb pgb:me
 ```
 
-_See code: [src/commands/pgb/whoami.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0-rc1/src/commands/pgb/whoami.js)_
+_See code: [src/commands/pgb/whoami.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.0.0/src/commands/pgb/whoami.js)_
 <!-- commandsstop -->
