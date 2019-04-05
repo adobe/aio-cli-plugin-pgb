@@ -36,7 +36,9 @@ class BaseCommand extends Command {
       const help = new HHelp(this.config)
       help.showHelp(['pgb', '--help'])
     } else {
-      process.argv[2] = process.argv[2].slice(4)
+      process.argv = process.argv.slice(0, 2)
+      process.argv.push(this.id.slice(4))
+      process.argv = process.argv.concat(this.argv)
       this.debug(`redirecting to "pgb ${process.argv.slice(2).join(' ')}"`)
       return pgb.run()
     }

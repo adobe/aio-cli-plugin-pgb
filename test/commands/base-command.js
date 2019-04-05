@@ -56,9 +56,10 @@ describe('instance methods', () => {
     })
 
     test('pass through to pgb.run with non oclif command and args', () => {
-      process.argv = ['/bin/node', 'aio', 'pgb:pgb_command', '-j', '--foob=bar']
+      process.argv = ['/bin/node', 'aio', 'pgb:pgb_command']
+      command.id = 'pgb:pgb_command'
       return command.run().then(() => {
-        expect(process.argv).toEqual(['/bin/node', 'aio', 'pgb_command', '-j', '--foob=bar'])
+        expect(process.argv).toEqual(['/bin/node', 'aio', 'pgb_command'])
         expect(global.pgb.run).toHaveBeenCalled()
       })
     })

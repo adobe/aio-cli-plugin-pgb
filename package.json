@@ -1,7 +1,7 @@
 {
   "name": "@adobe/aio-cli-plugin-pgb",
   "description": "PhoneGap Build commands for the Adobe I/O CLI",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": "Adobe Inc.",
   "contributors": [
     "brett rudd"
@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
-    "eslint": "^5.13.0",
+    "eslint": "^5.14.0",
     "eslint-config-oclif": "^3.1.0",
     "eslint-plugin-jest": "^22.2.2",
     "eslint-plugin-node": "^8.0.0",
