@@ -14,6 +14,7 @@ const {Command, flags} = require('@oclif/command')
 const util = require('util')
 const HHelp = require('@oclif/plugin-help').default
 const moduleVersion = require('../package.json').version
+const config = require('@adobe/aio-cli-config')
 
 global.pgb = require('pgb-cli')()
 delete pgb.cliOpts.flags.help
@@ -22,6 +23,11 @@ delete pgb.cliOpts.flags.debug
 
 class BaseCommand extends Command {
   async run() {
+    let authtoken = config.get('pgb.authtoken') || config.get('pgb.auth_token')
+    if (!process.env.PGB_AUTH_TOKEN && authtoken) {
+      process.env.PGB_AUTH_TOKEN = authtoken
+    }
+
     pgb.error = this.logError.bind(this)
     pgb.print = this.logPrint.bind(this)
     pgb.debug = this.logDebug.bind(this)

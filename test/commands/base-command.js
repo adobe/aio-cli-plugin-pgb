@@ -10,6 +10,9 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
+jest.mock('@adobe/aio-cli-config')
+const config = require('@adobe/aio-cli-config')
+
 const {Command} = require('@oclif/command')
 const TheCommand = require('../../src/base-command.js')
 const {stdout} = require('stdout-stderr')
@@ -60,6 +63,18 @@ describe('instance methods', () => {
       command.id = 'pgb:pgb_command'
       return command.run().then(() => {
         expect(process.argv).toEqual(['/bin/node', 'aio', 'pgb_command'])
+        expect(global.pgb.run).toHaveBeenCalled()
+      })
+    })
+
+    test('should use pgb.authtoken from aio-cli-config', () => {
+      process.argv = ['/bin/node', 'aio', 'pgb:pgb_command']
+      command.id = 'pgb:pgb_command'
+
+      config.get.mockReturnValue('foobar')
+      return command.run().then(() => {
+        expect(process.argv).toEqual(['/bin/node', 'aio', 'pgb_command'])
+        expect(process.env.PGB_AUTH_TOKEN).toEqual('foobar')
         expect(global.pgb.run).toHaveBeenCalled()
       })
     })
