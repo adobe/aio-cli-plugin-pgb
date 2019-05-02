@@ -7,7 +7,6 @@ Adobe I/O cli plugin for pgb-cli
 [![Version](https://img.shields.io/npm/v/@adobe/aio-cli-plugin-pgb.svg)](https://npmjs.org/package/@adobe/aio-cli-plugin-pgb)
 [![Downloads/week](https://img.shields.io/npm/dw/@adobe/aio-cli-plugin-pgb.svg)](https://npmjs.org/package/@adobe/aio-cli-plugin-pgb)
 [![Build Status](https://travis-ci.org/adobe/aio-cli-plugin-pgb.svg?branch=master)](https://travis-ci.org/adobe/aio-cli-plugin-pgb)
-[![Build status](https://ci.appveyor.com/api/projects/status/64arn2jha5xrp3i3/branch/master?svg=true)](https://ci.appveyor.com/project/adobe/aio-cli-plugin-pgb/branch/master)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Greenkeeper badge](https://badges.greenkeeper.io/adobe/aio-cli-plugin-pgb.svg)](https://greenkeeper.io/)
 [![Codecov Coverage](https://img.shields.io/codecov/c/github/adobe/aio-cli-plugin-pgb/master.svg?style=flat-square)](https://codecov.io/gh/adobe/aio-cli-plugin-pgb/)
 
