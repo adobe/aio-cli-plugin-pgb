@@ -20,7 +20,7 @@
     "eslint": "^5.14.0",
     "eslint-config-oclif": "^3.1.0",
     "eslint-plugin-jest": "^22.2.2",
-    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-node": "^9.0.0",
     "jest": "^24.0.0",
     "stdout-stderr": "^0.1.9"
   },
