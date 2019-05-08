@@ -8,7 +8,7 @@
   ],
   "bugs": "https://github.com/adobe/aio-cli-plugin-pgb/issues",
   "dependencies": {
-    "@adobe/aio-cli-config": "^1.0.5",
+    "@adobe/aio-cli-config": "^1.0.6",
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
@@ -20,7 +20,7 @@
     "eslint": "^5.14.0",
     "eslint-config-oclif": "^3.1.0",
     "eslint-plugin-jest": "^22.2.2",
-    "eslint-plugin-node": "^9.0.0",
+    "eslint-plugin-node": "^9.0.1",
     "jest": "^24.0.0",
     "stdout-stderr": "^0.1.9"
   },
