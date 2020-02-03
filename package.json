@@ -54,6 +54,7 @@
     "test": "eslint . && jest",
     "prepack": "oclif-dev manifest && oclif-dev readme",
     "postpack": "rm -f oclif.manifest.json",
-    "readme": "oclif-dev readme"
+    "readme": "oclif-dev readme",
+    "e2e": "jest --collectCoverage=false --testRegex './e2e/e2e.js'"
   }
 }
