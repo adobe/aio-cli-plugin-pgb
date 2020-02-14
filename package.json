@@ -17,8 +17,6 @@
   "devDependencies": {
     "@oclif/dev-cli": "^1",
     "codecov": "^3.3.0",
-    "execa": "^4.0.0",
-    "chalk": "^3.0.0",
     "eslint": "^6.0.0",
     "eslint-config-oclif": "^3.1.0",
     "eslint-plugin-jest": "^23.0.0",
@@ -56,7 +54,6 @@
     "test": "eslint . && jest",
     "prepack": "oclif-dev manifest && oclif-dev readme",
     "postpack": "rm -f oclif.manifest.json",
-    "readme": "oclif-dev readme",
-    "e2e": "jest --collectCoverage=false --testRegex './e2e/e2e.js'"
+    "readme": "oclif-dev readme"
   }
 }
