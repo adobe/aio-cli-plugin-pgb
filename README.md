@@ -14,48 +14,47 @@ Adobe I/O cli plugin for pgb-cli
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
+
 # Usage
 ```sh-session
-$ npm install -g @adobe/aio-cli-plugin-pgb
-$ aio-pgb COMMAND
-running command...
-$ aio-pgb --help [COMMAND]
-USAGE
-  $ aio-pgb COMMAND
-...
+$ aio plugins:install -g @adobe/aio-cli-plugin-pgb
+$ # OR
+$ aio discover -i
+$ aio pgb --help
 ```
+
 # Commands
 <!-- commands -->
-* [`aio-pgb pgb`](#aio-pgb-pgb)
-* [`aio-pgb pgb:app ID`](#aio-pgb-pgbapp-id)
-* [`aio-pgb pgb:build ID [PLATFORMS...]`](#aio-pgb-pgbbuild-id-platforms)
-* [`aio-pgb pgb:download ID PLATFORM [PATH]`](#aio-pgb-pgbdownload-id-platform-path)
-* [`aio-pgb pgb:key PLATFORM ID`](#aio-pgb-pgbkey-platform-id)
-* [`aio-pgb pgb:keys [PLATFORM]`](#aio-pgb-pgbkeys-platform)
-* [`aio-pgb pgb:lock PLATFORM ID`](#aio-pgb-pgblock-platform-id)
-* [`aio-pgb pgb:log ID PLATFORM`](#aio-pgb-pgblog-id-platform)
-* [`aio-pgb pgb:login`](#aio-pgb-pgblogin)
-* [`aio-pgb pgb:logout`](#aio-pgb-pgblogout)
-* [`aio-pgb pgb:ls [COLUMNS...]`](#aio-pgb-pgbls-columns)
-* [`aio-pgb pgb:new REPOSITORY|DIRECTORY|FILE`](#aio-pgb-pgbnew-repositorydirectoryfile)
-* [`aio-pgb pgb:new-key PLATFORM`](#aio-pgb-pgbnew-key-platform)
-* [`aio-pgb pgb:phonegaps`](#aio-pgb-pgbphonegaps)
-* [`aio-pgb pgb:pull ID`](#aio-pgb-pgbpull-id)
-* [`aio-pgb pgb:rm ID`](#aio-pgb-pgbrm-id)
-* [`aio-pgb pgb:rm-key PLATFORM ID`](#aio-pgb-pgbrm-key-platform-id)
-* [`aio-pgb pgb:unlock PLATFORM ID`](#aio-pgb-pgbunlock-platform-id)
-* [`aio-pgb pgb:update ID [REPOSITORY|DIRECTORY|FILE]`](#aio-pgb-pgbupdate-id-repositorydirectoryfile)
-* [`aio-pgb pgb:update-key PLATFORM ID`](#aio-pgb-pgbupdate-key-platform-id)
-* [`aio-pgb pgb:wait ID`](#aio-pgb-pgbwait-id)
-* [`aio-pgb pgb:whoami`](#aio-pgb-pgbwhoami)
+* [`aio pgb`](#aio-pgb)
+* [`aio pgb:app ID`](#aio-pgbapp-id)
+* [`aio pgb:build ID [PLATFORMS...]`](#aio-pgbbuild-id-platforms)
+* [`aio pgb:download ID PLATFORM [PATH]`](#aio-pgbdownload-id-platform-path)
+* [`aio pgb:key PLATFORM ID`](#aio-pgbkey-platform-id)
+* [`aio pgb:keys [PLATFORM]`](#aio-pgbkeys-platform)
+* [`aio pgb:lock PLATFORM ID`](#aio-pgblock-platform-id)
+* [`aio pgb:log ID PLATFORM`](#aio-pgblog-id-platform)
+* [`aio pgb:login`](#aio-pgblogin)
+* [`aio pgb:logout`](#aio-pgblogout)
+* [`aio pgb:ls [COLUMNS...]`](#aio-pgbls-columns)
+* [`aio pgb:new REPOSITORY|DIRECTORY|FILE`](#aio-pgbnew-repositorydirectoryfile)
+* [`aio pgb:new-key PLATFORM`](#aio-pgbnew-key-platform)
+* [`aio pgb:phonegaps`](#aio-pgbphonegaps)
+* [`aio pgb:pull ID`](#aio-pgbpull-id)
+* [`aio pgb:rm ID`](#aio-pgbrm-id)
+* [`aio pgb:rm-key PLATFORM ID`](#aio-pgbrm-key-platform-id)
+* [`aio pgb:unlock PLATFORM ID`](#aio-pgbunlock-platform-id)
+* [`aio pgb:update ID [REPOSITORY|DIRECTORY|FILE]`](#aio-pgbupdate-id-repositorydirectoryfile)
+* [`aio pgb:update-key PLATFORM ID`](#aio-pgbupdate-key-platform-id)
+* [`aio pgb:wait ID`](#aio-pgbwait-id)
+* [`aio pgb:whoami`](#aio-pgbwhoami)
 
-## `aio-pgb pgb`
+## `aio pgb`
 
 Adobe I/O - PhoneGap Build API
 
 ```
 USAGE
-  $ aio-pgb pgb
+  $ aio pgb
 
 OPTIONS
   -v, --version  Show version
@@ -64,13 +63,13 @@ OPTIONS
 
 _See code: [src/commands/pgb/index.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/index.js)_
 
-## `aio-pgb pgb:app ID`
+## `aio pgb:app ID`
 
 Show information about the app specified by id
 
 ```
 USAGE
-  $ aio-pgb pgb:app ID
+  $ aio pgb:app ID
 
 OPTIONS
   -b, --bare     Show bare integer ids
@@ -82,13 +81,13 @@ OPTIONS
 
 _See code: [src/commands/pgb/app.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/app.js)_
 
-## `aio-pgb pgb:build ID [PLATFORMS...]`
+## `aio pgb:build ID [PLATFORMS...]`
 
 Build an app for all platforms or for the optionally specified platforms
 
 ```
 USAGE
-  $ aio-pgb pgb:build ID [PLATFORMS...]
+  $ aio pgb:build ID [PLATFORMS...]
 
 OPTIONS
   -b, --bare     Show bare integer ids
@@ -106,13 +105,13 @@ EXAMPLES
 
 _See code: [src/commands/pgb/build.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/build.js)_
 
-## `aio-pgb pgb:download ID PLATFORM [PATH]`
+## `aio pgb:download ID PLATFORM [PATH]`
 
 Download the app package for a given app id and platform
 
 ```
 USAGE
-  $ aio-pgb pgb:download ID PLATFORM [PATH]
+  $ aio pgb:download ID PLATFORM [PATH]
 
 OPTIONS
   -s, --stdout   Pipe downloaded app to stdout
@@ -130,13 +129,13 @@ EXAMPLES
 
 _See code: [src/commands/pgb/download.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/download.js)_
 
-## `aio-pgb pgb:key PLATFORM ID`
+## `aio pgb:key PLATFORM ID`
 
 Show information about the key specified by platform and id
 
 ```
 USAGE
-  $ aio-pgb pgb:key PLATFORM ID
+  $ aio pgb:key PLATFORM ID
 
 OPTIONS
   -b, --bare     Show bare integer ids
@@ -151,13 +150,13 @@ EXAMPLE
 
 _See code: [src/commands/pgb/key.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/key.js)_
 
-## `aio-pgb pgb:keys [PLATFORM]`
+## `aio pgb:keys [PLATFORM]`
 
 List your signing keys, optionally filtered by platform
 
 ```
 USAGE
-  $ aio-pgb pgb:keys [PLATFORM]
+  $ aio pgb:keys [PLATFORM]
 
 OPTIONS
   -b, --bare     Show bare integer ids
@@ -167,8 +166,8 @@ OPTIONS
   --no-colours   Do not use ansi colours
 
 ALIASES
-  $ aio-pgb pgb:ls-keys
-  $ aio-pgb pgb:list-keys
+  $ aio pgb:ls-keys
+  $ aio pgb:list-keys
 
 EXAMPLES
   $ aio pgb:keys
@@ -177,13 +176,13 @@ EXAMPLES
 
 _See code: [src/commands/pgb/keys.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/keys.js)_
 
-## `aio-pgb pgb:lock PLATFORM ID`
+## `aio pgb:lock PLATFORM ID`
 
 Lock the signing key with the specified platform and id
 
 ```
 USAGE
-  $ aio-pgb pgb:lock PLATFORM ID
+  $ aio pgb:lock PLATFORM ID
 
 OPTIONS
   -j, --json     Show raw json output
@@ -194,13 +193,13 @@ OPTIONS
 
 _See code: [src/commands/pgb/lock.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/lock.js)_
 
-## `aio-pgb pgb:log ID PLATFORM`
+## `aio pgb:log ID PLATFORM`
 
 Display the latest build log for the specified app id and platform
 
 ```
 USAGE
-  $ aio-pgb pgb:log ID PLATFORM
+  $ aio pgb:log ID PLATFORM
 
 OPTIONS
   -j, --json     Show raw json output
@@ -211,13 +210,13 @@ OPTIONS
 
 _See code: [src/commands/pgb/log.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/log.js)_
 
-## `aio-pgb pgb:login`
+## `aio pgb:login`
 
 Sign-in to PhoneGap Build
 
 ```
 USAGE
-  $ aio-pgb pgb:login
+  $ aio pgb:login
 
 OPTIONS
   -v, --version  Show version
@@ -225,19 +224,19 @@ OPTIONS
   --no-colours   Do not use ansi colours
 
 ALIASES
-  $ aio-pgb pgb:signin
-  $ aio-pgb pgb:sign-in
+  $ aio pgb:signin
+  $ aio pgb:sign-in
 ```
 
 _See code: [src/commands/pgb/login.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/login.js)_
 
-## `aio-pgb pgb:logout`
+## `aio pgb:logout`
 
 Sign-out of PhoneGap Build
 
 ```
 USAGE
-  $ aio-pgb pgb:logout
+  $ aio pgb:logout
 
 OPTIONS
   -v, --version  Show version
@@ -245,19 +244,19 @@ OPTIONS
   --no-colours   Do not use ansi colours
 
 ALIASES
-  $ aio-pgb pgb:signout
-  $ aio-pgb pgb:sign-out
+  $ aio pgb:signout
+  $ aio pgb:sign-out
 ```
 
 _See code: [src/commands/pgb/logout.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/logout.js)_
 
-## `aio-pgb pgb:ls [COLUMNS...]`
+## `aio pgb:ls [COLUMNS...]`
 
 List your apps
 
 ```
 USAGE
-  $ aio-pgb pgb:ls [COLUMNS...]
+  $ aio pgb:ls [COLUMNS...]
 
 OPTIONS
   -b, --bare     Show bare integer ids
@@ -267,19 +266,19 @@ OPTIONS
   --no-colours   Do not use ansi colours
 
 ALIASES
-  $ aio-pgb pgb:apps
-  $ aio-pgb pgb:list
+  $ aio pgb:apps
+  $ aio pgb:list
 ```
 
 _See code: [src/commands/pgb/ls.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/ls.js)_
 
-## `aio-pgb pgb:new REPOSITORY|DIRECTORY|FILE`
+## `aio pgb:new REPOSITORY|DIRECTORY|FILE`
 
 Add a new app from the specified repository, directory or file
 
 ```
 USAGE
-  $ aio-pgb pgb:new REPOSITORY|DIRECTORY|FILE
+  $ aio pgb:new REPOSITORY|DIRECTORY|FILE
 
 OPTIONS
   -e, --exit                             Exit immediately (do not wait for build)
@@ -303,8 +302,8 @@ OPTIONS
   --winphone-phonegap=winphone-phonegap  honeGap version for winphone platform
 
 ALIASES
-  $ aio-pgb pgb:add
-  $ aio-pgb pgb:create
+  $ aio pgb:add
+  $ aio pgb:create
 
 EXAMPLES
   $ aio pgb:new /path/to/dir --ignore=node_modules,**/.log
@@ -313,13 +312,13 @@ EXAMPLES
 
 _See code: [src/commands/pgb/new.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/new.js)_
 
-## `aio-pgb pgb:new-key PLATFORM`
+## `aio pgb:new-key PLATFORM`
 
 Add a new signing key
 
 ```
 USAGE
-  $ aio-pgb pgb:new-key PLATFORM
+  $ aio pgb:new-key PLATFORM
 
 OPTIONS
   -b, --bare                   Show bare integer ids
@@ -336,8 +335,8 @@ OPTIONS
   --title=title                (required) Title of key
 
 ALIASES
-  $ aio-pgb pgb:add-key
-  $ aio-pgb pgb:create-key
+  $ aio pgb:add-key
+  $ aio pgb:create-key
 
 EXAMPLES
   $ aio pgb:new-key ios --title='ios key' --profile='/path/to/profile.mobileprovision' --key='/path/to/key.p12'
@@ -348,13 +347,13 @@ EXAMPLES
 
 _See code: [src/commands/pgb/new-key.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/new-key.js)_
 
-## `aio-pgb pgb:phonegaps`
+## `aio pgb:phonegaps`
 
 List supported versions of PhoneGap / Cordova
 
 ```
 USAGE
-  $ aio-pgb pgb:phonegaps
+  $ aio pgb:phonegaps
 
 OPTIONS
   -j, --json     Show raw json output
@@ -363,18 +362,18 @@ OPTIONS
   --no-colours   Do not use ansi colours
 
 ALIASES
-  $ aio-pgb pgb:cordovas
+  $ aio pgb:cordovas
 ```
 
 _See code: [src/commands/pgb/phonegaps.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/phonegaps.js)_
 
-## `aio-pgb pgb:pull ID`
+## `aio pgb:pull ID`
 
 Shortcut to clone and update a repo backed app specified by an id
 
 ```
 USAGE
-  $ aio-pgb pgb:pull ID
+  $ aio pgb:pull ID
 
 OPTIONS
   -e, --exit                             Exit immediately (do not wait for build)
@@ -398,7 +397,7 @@ OPTIONS
   --winphone-phonegap=winphone-phonegap  honeGap version for winphone platform
 
 ALIASES
-  $ aio-pgb pgb:clone
+  $ aio pgb:clone
 
 EXAMPLES
   $ aio pgb:pull 12
@@ -407,13 +406,13 @@ EXAMPLES
 
 _See code: [src/commands/pgb/pull.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/pull.js)_
 
-## `aio-pgb pgb:rm ID`
+## `aio pgb:rm ID`
 
 Delete the app with the specified app id
 
 ```
 USAGE
-  $ aio-pgb pgb:rm ID
+  $ aio pgb:rm ID
 
 OPTIONS
   -b, --bare     Show bare integer ids
@@ -424,18 +423,18 @@ OPTIONS
   --no-colours   Do not use ansi colours
 
 ALIASES
-  $ aio-pgb pgb:delete
+  $ aio pgb:delete
 ```
 
 _See code: [src/commands/pgb/rm.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/rm.js)_
 
-## `aio-pgb pgb:rm-key PLATFORM ID`
+## `aio pgb:rm-key PLATFORM ID`
 
 Delete the key with the specified platform and key id
 
 ```
 USAGE
-  $ aio-pgb pgb:rm-key PLATFORM ID
+  $ aio pgb:rm-key PLATFORM ID
 
 OPTIONS
   -b, --bare     Show bare integer ids
@@ -446,18 +445,18 @@ OPTIONS
   --no-colours   Do not use ansi colours
 
 ALIASES
-  $ aio-pgb pgb:delete-key
+  $ aio pgb:delete-key
 ```
 
 _See code: [src/commands/pgb/rm-key.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/rm-key.js)_
 
-## `aio-pgb pgb:unlock PLATFORM ID`
+## `aio pgb:unlock PLATFORM ID`
 
 Unlock the signing key with the specified platform and id.
 
 ```
 USAGE
-  $ aio-pgb pgb:unlock PLATFORM ID
+  $ aio pgb:unlock PLATFORM ID
 
 OPTIONS
   -b, --bare     Show bare integer ids
@@ -467,18 +466,18 @@ OPTIONS
   --no-colours   Do not use ansi colours
 
 ALIASES
-  $ aio-pgb pgb:unlock-key
+  $ aio pgb:unlock-key
 ```
 
 _See code: [src/commands/pgb/unlock.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/unlock.js)_
 
-## `aio-pgb pgb:update ID [REPOSITORY|DIRECTORY|FILE]`
+## `aio pgb:update ID [REPOSITORY|DIRECTORY|FILE]`
 
 Update an app and / or an app's properties from the optional repository,
 
 ```
 USAGE
-  $ aio-pgb pgb:update ID [REPOSITORY|DIRECTORY|FILE]
+  $ aio pgb:update ID [REPOSITORY|DIRECTORY|FILE]
 
 OPTIONS
   -e, --exit                             Exit immediately (do not wait for build)
@@ -507,13 +506,13 @@ EXAMPLE
 
 _See code: [src/commands/pgb/update.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/update.js)_
 
-## `aio-pgb pgb:update-key PLATFORM ID`
+## `aio pgb:update-key PLATFORM ID`
 
 Update a signing key
 
 ```
 USAGE
-  $ aio-pgb pgb:update-key PLATFORM ID
+  $ aio pgb:update-key PLATFORM ID
 
 OPTIONS
   -b, --bare            Show bare integer ids
@@ -530,13 +529,13 @@ EXAMPLE
 
 _See code: [src/commands/pgb/update-key.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/update-key.js)_
 
-## `aio-pgb pgb:wait ID`
+## `aio pgb:wait ID`
 
 Waits for a build for the specified app
 
 ```
 USAGE
-  $ aio-pgb pgb:wait ID
+  $ aio pgb:wait ID
 
 OPTIONS
   -v, --version  Show version
@@ -548,13 +547,13 @@ OPTIONS
 
 _See code: [src/commands/pgb/wait.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/wait.js)_
 
-## `aio-pgb pgb:whoami`
+## `aio pgb:whoami`
 
 Display the signed in user
 
 ```
 USAGE
-  $ aio-pgb pgb:whoami
+  $ aio pgb:whoami
 
 OPTIONS
   -j, --json     Show raw json output
@@ -563,7 +562,7 @@ OPTIONS
   --no-colours   Do not use ansi colours
 
 ALIASES
-  $ aio-pgb pgb:me
+  $ aio pgb:me
 ```
 
 _See code: [src/commands/pgb/whoami.js](https://github.com/adobe/aio-cli-plugin-pgb/blob/v1.2.1/src/commands/pgb/whoami.js)_
